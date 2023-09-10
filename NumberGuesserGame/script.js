@@ -28,9 +28,7 @@ function playGame() {
     let random_number = this.getRandomIntInclusive(1, 10);
     let win = false;
     for (let i = 0; i < 3; i++) {
-        let user_number = prompt('Enter a number between 1 to 10');
-        console.log(user_number);
-        console.log(random_number);
+        let user_number = prompt(`Enter a number between 1 to 10\n You have ${3 - i} chances left!`);
         if (user_number === null) {
             alert('You have not provided any number!');
             break
